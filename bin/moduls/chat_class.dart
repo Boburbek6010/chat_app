@@ -25,45 +25,12 @@ class Sms{
   ];
 
 
-  // @override
-  // void calling() {
-  //   int minute = 6;
-  //   int minut = 8;
-  //   print('${contact[3]} is calling you...');
-  //   Timer.periodic(Duration(seconds: 2), (timer) {
-  //     minute--;
-  //     print('tuuut..');
-  //     if (minute == 0) {
-  //       timer.cancel();
-  //       print('${contact[3]} is speaking with ${contact[random1()]}');
-  //       Timer.periodic(Duration(seconds: 1), (timer) {
-  //         minut--;
-  //         print('speaking...');
-  //         if (minut == 0) {
-  //           timer.cancel();
-  //           print('Communication was stopped');
-  //         }
-  //       });
-  //     }
-  //   });
-  // }
-
-  // @override
-  // int random1() {
-  //   Random random = Random();
-  //   int randomNumber = random.nextInt(5);
-  //   return randomNumber;
-  // }
-
-
-
   void message(String name) {
-    print('\nE\'tibor bering bitta sms narxi 10 so\'m \n\n');
-    print('$name qancha pulingiz bor? ');
-    int summa = int.parse(stdin.readLineSync()!);
     if (name.length > 2 && name.isNotEmpty) {
       for (int i = 0; i < contact.length; i++) {
         if ('\n$name' == contact[i] || '\n$name\n' == contact[i] || '\n$name' == contact[i].toLowerCase() || '\n$name\n' == contact[i].toLowerCase()) {
+          print('$name qancha pulingiz bor? ');
+          int summa = int.parse(stdin.readLineSync()!);
           String toWhom = '';
           print('\n                      Kimga sms xabar yozmoqchisiz? ');
           stdout.write('                      ');

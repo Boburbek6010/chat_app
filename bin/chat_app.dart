@@ -8,6 +8,7 @@ void main() {
 
   Sms sms = Sms();
   print('${sms.contact}\n');
+  print('\nE\'tibor bering bitta sms narxi 10 so\'m \n\n');
   print(LangServise.tr(('                      Ismingizni kiriting: ')));
   stdout.write('                      ');
   sms.message(stdin.readLineSync()!);
